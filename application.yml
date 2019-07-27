@@ -3,12 +3,14 @@ spring:
         active: 
             - dev: 
 ---
+
 spring: 
     profiles: dev
         application: 
               name: microservicecloud-config-yang-dev
     
 ---
+
 spring: 
     profiles: test
         application: 
