@@ -7,10 +7,10 @@ spring:
 spring:
     profiles: dev
     application:
-        name: microservicecloud-config-atguigu-dev
+        name: microservicecloud-config-yang-dev
         
 ---
 spring:
     profiles: test
     application:
-        name: microservicecloud-config-atguigu-test
+        name: microservicecloud-config-yang-test
