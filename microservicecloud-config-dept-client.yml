@@ -1,4 +1,4 @@
-spring:
+ï»¿spring:
     profiles:
         active:
             - dev
@@ -11,24 +11,24 @@ spring:
     application:
         name: microservicecloud-confit-dept-client
     datasource:
-    type: com.alibaba.druid.pool.DruidDataSource            # µ±Ç°Êı¾İÔ´²Ù×÷ÀàĞÍ
+    type: com.alibaba.druid.pool.DruidDataSource            # å½“å‰æ•°æ®æºæ“ä½œç±»å‹
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB01?useUnicode=true&characterEncoding=utf8&useSSL=false              # Êı¾İ¿âÃû³Æ
+    url: jdbc:mysql://localhost:3306/cloudDB01?useUnicode=true&characterEncoding=utf8&useSSL=false              # æ•°æ®åº“åç§°
     username: root
     password: 123456
     dbcp2:
-      min-idle: 5                                           # Êı¾İ¿âÁ¬½Ó³ØµÄ×îĞ¡Î¬³ÖÁ¬½ÓÊı
-      initial-size: 5                                       # ³õÊ¼»¯Á¬½ÓÊı
-      max-total: 5                                          # ×î´óÁ¬½ÓÊı
+      min-idle: 5                                           # æ•°æ®åº“è¿æ¥æ± çš„æœ€å°ç»´æŒè¿æ¥æ•°
+      initial-size: 5                                       # åˆå§‹åŒ–è¿æ¥æ•°
+      max-total: 5                                          # æœ€å¤§è¿æ¥æ•°
       max-wait-millis: 200
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisÅäÖÃÎÄ¼şËùÔÚÂ·¾¶
-  type-aliases-package: com.yang.springcloud.entities    # ËùÓĞEntity±ğÃûÀàËùÔÚ°ü
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisé…ç½®æ–‡ä»¶æ‰€åœ¨è·¯å¾„
+  type-aliases-package: com.yang.springcloud.entities    # æ‰€æœ‰Entityåˆ«åç±»æ‰€åœ¨åŒ…
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml 
 
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url:
       #defaultZone: http://localhost:7081/eureka
       defaultZone: http://eureka7081.com:7081/eureka/,http://eureka7082.com:7082/eureka/,http://eureka7083.com:7083/eureka/
@@ -45,18 +45,18 @@ spring:
     application:
         name: microservicecloud-confit-dept-client
     datasource:
-    type: com.alibaba.druid.pool.DruidDataSource            # µ±Ç°Êı¾İÔ´²Ù×÷ÀàĞÍ
+    type: com.alibaba.druid.pool.DruidDataSource            # å½“å‰æ•°æ®æºæ“ä½œç±»å‹
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB02?useUnicode=true&characterEncoding=utf8&useSSL=false              # Êı¾İ¿âÃû³Æ
+    url: jdbc:mysql://localhost:3306/cloudDB02?useUnicode=true&characterEncoding=utf8&useSSL=false              # æ•°æ®åº“åç§°
     username: root
     password: 123456
     dbcp2:
-      min-idle: 5                                           # Êı¾İ¿âÁ¬½Ó³ØµÄ×îĞ¡Î¬³ÖÁ¬½ÓÊı
-      initial-size: 5                                       # ³õÊ¼»¯Á¬½ÓÊı
-      max-total: 5                                          # ×î´óÁ¬½ÓÊı
+      min-idle: 5                                           # æ•°æ®åº“è¿æ¥æ± çš„æœ€å°ç»´æŒè¿æ¥æ•°
+      initial-size: 5                                       # åˆå§‹åŒ–è¿æ¥æ•°
+      max-total: 5                                          # æœ€å¤§è¿æ¥æ•°
       max-wait-millis: 200
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisÅäÖÃÎÄ¼şËùÔÚÂ·¾¶
-  type-aliases-package: com.yang.springcloud.entities    # ËùÓĞEntity±ğÃûÀàËùÔÚ°ü
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisé…ç½®æ–‡ä»¶æ‰€åœ¨è·¯å¾„
+  type-aliases-package: com.yang.springcloud.entities    # æ‰€æœ‰Entityåˆ«åç±»æ‰€åœ¨åŒ…
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml 
